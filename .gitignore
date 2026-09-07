@@ -1,0 +1,46 @@
+# ---- Build output ----
+bin/
+obj/
+publish/
+.dotnet/
+
+# ---- Visual Studio / IDE ----
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ---- Rider / VS Code ----
+.idea/
+.vscode/
+
+# ---- Node (if any frontend tooling is added later) ----
+node_modules/
+dist/
+
+# ---- Environment / local secrets ----
+.env
+.env.*
+!.env.example
+*.pfx
+*.snk
+
+# Local app configuration contains the JWT signing key and machine-specific
+# connection string. Copy appsettings.template.json to appsettings.json and
+# provide your own values.
+src/SABZ.API/appsettings.json
+
+# ---- OS / temporary files ----
+Thumbs.db
+*.tmp
+*.log
+
+# ---- Test / QA artifacts (screenshots, scripts, logs) ----
+*.png
+qa-*.txt
+*.ps1
+verify-seed.sql
+migration.sql
+apply-migration.ps1
+dotnet-install.ps1
